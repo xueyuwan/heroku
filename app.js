@@ -5,7 +5,6 @@ var bodyparser = require('body-parser');
 
 app.use(function(req,res,next){
    var name = req.params;
-
   res.json(name);
 });
 app.use(bodyparser());
