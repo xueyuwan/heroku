@@ -3,10 +3,7 @@ var path = require('path');
 var app = express();
 var bodyparser = require('body-parser');
 
-app.use(function(req,res,next){
-   var name = req.params;
-  res.json(name);
-});
+
 app.use(bodyparser());
 app.use(express.static(path.join(__dirname, 'public')));
 
